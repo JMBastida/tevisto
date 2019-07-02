@@ -1,0 +1,140 @@
+
+*{
+    box-sizing: border-box;
+      border: 1px solid transparent;
+}
+
+body{ 
+  color: rgb(255, 255, 255);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right,white,white,white,#52d3aa);
+}
+.sidebar3
+{
+padding-top:15px;
+padding-left:5px;
+padding-right:5px;
+padding-bottom: 15px;
+margin-bottom: 15px;
+}
+.sidefilter{
+  border: 2px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(transparent, transparent), radial-gradient(circle, #52d3aaa1,#52d3aa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.thumbnail{
+  background-image: linear-gradient(white, white), radial-gradient(circle, #3f95eaaf,#52d3aa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+/*.logo
+{
+float:left;
+}*/
+.logo > img
+{
+  box-shadow:0 0 0 1px #848FD8, 0 0 0 5px #1E1E45, 0 0 0 6px #848FD8,  -2px -2px 0 6px #00bcd4;
+  border:1px;
+  border-radius:100%;
+  padding:5px;
+
+}
+.name
+{ 
+  padding:5px;
+  height: 74px;
+  vertical-align: middle;
+  padding-top:20px;
+  text-align:left;
+}
+.name > p
+{
+  margin-bottom: 0px;
+}
+i {
+  display: inline-block;
+  margin-right: 1em;
+}
+li
+{
+  list-style-type: none;
+  padding:5px;
+  
+}
+ul{padding-left:0px;}
+.activebooks
+{
+border:1px solid rgb(121, 121, 121);
+padding:0px 10px;
+margin-top:-2px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+.dropdown .fa-plus
+{ 
+padding:4px;
+margin-top:-2px;
+margin-right:0px;
+}
+
+.list
+{
+  padding-left:20px;
+}
+.dropdown
+{
+  margin-left:-15px;
+}
+.submenu > li
+{ display:list-item;
+list-style-type: none;
+
+}
+.submenu{
+  padding-left:12px;
+  /*display: none;*/
+}
+.submenu > li:hover
+{
+  color:#ffffff;
+}
+.category::before, .category::after, .submenu::after
+{
+  content:" ";
+  white-space:pre;
+}
+i.fa.fa-circle-thin
+{
+  color:#00ff74;
+}
+li:hover{
+  background-color:rgba(255, 255, 255, 0.25);
+  cursor:pointer;
+}
+.main-content
+{ text-align: right;
+}
+.main-content > p > a
+{color: rgb(255, 255, 255);}
+
+/*voltear tarjeta*/
+
+.flipped {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yes_Check_Circle.svg/1024px-Yes_Check_Circle.svg.png') no-repeat;
+  background-size: 35px 35px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-top: 1px;
+  top: 10px;
+  z-index: 1;
+}

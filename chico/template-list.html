@@ -1,0 +1,12 @@
+{{#each this}} 
+<div id="{{@index}}" class="col-xs-6 col-md-3 col-sm-6"  onClick="reply_click(this.id)">
+    <div class="thumbnail">
+        <img style="width:100%;" src="{{image}}" alt="{{name}}">
+        <div class="unflip" id="check{{@index}}"></div>
+        <div class="caption">
+            <h4 style="text-align:center;">{{name}}</h4>
+        </div>
+    </div>
+    
+</div>
+{{/each}}

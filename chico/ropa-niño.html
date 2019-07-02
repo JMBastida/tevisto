@@ -1,0 +1,150 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="HTML5 by jmbastida.com" />
+        <meta name="keywords" content="html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+        <meta name="author" content="jmbastida" />
+        <title>Tevisto niño</title>
+        <style>
+        </style>
+        <link rel="stylesheet" href="../css/listado-ropa.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/template7/template7.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css">
+        <style>
+
+            .btn.btn-primary {
+            background: #3f95ea;
+            color: #fff;
+            border: none !important;
+            border: 2px solid transparent !important;
+            }
+
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            [type="radio"]:checked + label,
+            [type="radio"]:not(:checked) + label
+            {
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                line-height: 20px;
+                display: inline-block;
+                color: #666;
+            }
+            [type="radio"]:checked + label:before,
+            [type="radio"]:not(:checked) + label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 18px;
+                height: 18px;
+                border: 1px solid #ddd;
+                border-radius: 100%;
+                background: #fff;
+            }
+            [type="radio"]:checked + label:after,
+            [type="radio"]:not(:checked) + label:after {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background: #3f95ea;
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                border-radius: 100%;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            [type="radio"]:not(:checked) + label:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+            [type="radio"]:checked + label:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="slant1"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-3 sidebar3" style="text-align: center;">
+                    
+                    <div class="logo">
+                        <a style="color: #42d1a8; font-size: 35px; font-weight: 700;background: linear-gradient(to left,#2e7760b4,#42d1a8, #52d3aa);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;" href="../index.html">Tevisto Niño</a>
+                    </div>
+                    <div class="name">
+                        <!--    <br>
+                        <p style="color: #2185d5; font-size: 25px; font-weight: 300;">Ropa para niño</p>-->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Tamaño paquete <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a id="small_pack" href="#">Paquete pequeño <span class="activebooks">6</span></a></li>
+                              <li><a id="big_pack" href="#">Paquete grande <span class="activebooks">10</span></a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Información</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="left-navigation sidebar3 sidefilter" style="color:white!important;">
+                        <ul>
+                            <li><i class="fas fa-home" aria-hidden="true"></i>Inicio</li>
+                            <li><i class="fas fa-tshirt" aria-hidden="true"></i>Ropa niña</li>
+                            <li><i class="fas fa-box" aria-hidden="true"></i>Paquete<span id="pack_size" class="activebooks pull-right">6</span><span class="pull-right" style="font-weight:800;margin-right:2px;">/</span><span id="prod_counter" class="activebooks pull-right">0</span></li>
+                            <li class="list">
+                                <div class="dropdown">
+                                    <i class="fa fa-list" aria-hidden="false" aria-expanded="false"></i>Edad: <i class="fa fa-plus pull-right"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <li><input class="age_filter" type="radio" name="gender" id=0 value=0 checked> <label for=0> 0 meses</label></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=1 value=1> <label for=1> 1 mes</label></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=3 value=3> <label for=3> 3 meses</label></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=6 value=6> <label for=6> 6 meses</label></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=9 value=9> <label for=9> 9 meses</label><br></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=12 value=12> <label for=12> 12 meses</label></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=18 value=18> <label for=18> 18 meses</label></li>
+                                    <li><input class="age_filter" type="radio" name="gender" id=24 value=24> <label for=24> 24 meses</label></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div style="width:100%; text-align: center;"><button id="btn_filter" type="button" class="btn btn-primary">Actualizar</button></div>
+                    </div>
+                    <div style="width:100%; text-align: center; margin-top: 20px;"><a id="btn_test" class="btn btn-info btn-lg disabled" href="../chico/index.html">Siguiente</a></div>
+                </div>
+                <div class="col-md-10 col-sm-8 col-xs-12 main-content">
+                    <div style="margin:auto;width:90%;height:75%;overflow-y: scroll;">
+                        <div class="row" id="lista_ropa"></div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+        <script src="../js/listado-ropa.js"></script>
+    </body>
+
+</html>
