@@ -6,7 +6,7 @@ AUTHOR:
 JMBastida
 
 Website: http://jmbastida.com/
-<b> Url for testing project:</b> <a>https://juan-santos.firebaseapp.com</a>
+Url for testing project: https://juan-santos.firebaseapp.com
 
 
 Used stuff:
